@@ -1,26 +1,14 @@
-//
-//  ContentView.swift
-//  2-light-enc-shct
-//
-//  Created by andrea on 29/01/23.
-//
+
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, I just provides shortcuts")
+            Text("")
+            Text("Go to Shortcuts and look for the name of this app")
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

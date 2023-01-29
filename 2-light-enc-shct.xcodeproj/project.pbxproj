@@ -11,14 +11,79 @@
 		65E3A4F52986E6C500DBB0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A4F42986E6C500DBB0C3 /* ContentView.swift */; };
 		65E3A4F72986E6C600DBB0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E3A4F62986E6C600DBB0C3 /* Assets.xcassets */; };
 		65E3A4FA2986E6C600DBB0C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E3A4F92986E6C600DBB0C3 /* Preview Assets.xcassets */; };
+		65E3A5082986E75000DBB0C3 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3A5072986E75000DBB0C3 /* Intents.framework */; };
+		65E3A50B2986E75000DBB0C3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A50A2986E75000DBB0C3 /* IntentHandler.swift */; };
+		65E3A5132986E75100DBB0C3 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E3A5122986E75100DBB0C3 /* IntentsUI.framework */; };
+		65E3A5162986E75100DBB0C3 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5152986E75100DBB0C3 /* IntentViewController.swift */; };
+		65E3A5192986E75100DBB0C3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E3A5172986E75100DBB0C3 /* MainInterface.storyboard */; };
+		65E3A51D2986E75100DBB0C3 /* shCtIntentUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 65E3A5112986E75100DBB0C3 /* shCtIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		65E3A5202986E75100DBB0C3 /* shCtIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 65E3A5052986E75000DBB0C3 /* shCtIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		65E3A5292986E82300DBB0C3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5282986E82300DBB0C3 /* Intents.intentdefinition */; };
+		65E3A52D2986E85200DBB0C3 /* DecWithPassShCtIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A52A2986E85100DBB0C3 /* DecWithPassShCtIntentHandler.swift */; };
+		65E3A52E2986E85200DBB0C3 /* EncWithPassShCtIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A52B2986E85100DBB0C3 /* EncWithPassShCtIntentHandler.swift */; };
+		65E3A52F2986E85200DBB0C3 /* EncWithDeetsShCtIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A52C2986E85100DBB0C3 /* EncWithDeetsShCtIntentHandler.swift */; };
+		65E3A5322986E93200DBB0C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5302986E93200DBB0C3 /* Extensions.swift */; };
+		65E3A5332986E93200DBB0C3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5302986E93200DBB0C3 /* Extensions.swift */; };
+		65E3A5342986E93200DBB0C3 /* LowLevelCryptTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5312986E93200DBB0C3 /* LowLevelCryptTools.swift */; };
+		65E3A5352986E93200DBB0C3 /* LowLevelCryptTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5312986E93200DBB0C3 /* LowLevelCryptTools.swift */; };
+		65E3A5362986EA7300DBB0C3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 65E3A5282986E82300DBB0C3 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		65E3A51B2986E75100DBB0C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E3A4E72986E6C500DBB0C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65E3A5102986E75100DBB0C3;
+			remoteInfo = shCtIntentUI;
+		};
+		65E3A51E2986E75100DBB0C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E3A4E72986E6C500DBB0C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65E3A5042986E75000DBB0C3;
+			remoteInfo = shCtIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65E3A5272986E75100DBB0C3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				65E3A5202986E75100DBB0C3 /* shCtIntent.appex in Embed Foundation Extensions */,
+				65E3A51D2986E75100DBB0C3 /* shCtIntentUI.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		65E3A4EF2986E6C500DBB0C3 /* 2-light-enc-shct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2-light-enc-shct.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E3A4EF2986E6C500DBB0C3 /* your encrypter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "your encrypter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E3A4F22986E6C500DBB0C3 /* __light_enc_shctApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __light_enc_shctApp.swift; sourceTree = "<group>"; };
 		65E3A4F42986E6C500DBB0C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65E3A4F62986E6C600DBB0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E3A4F92986E6C600DBB0C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65E3A5002986E70400DBB0C3 /* 2-light-enc-shct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "2-light-enc-shct.entitlements"; sourceTree = "<group>"; };
+		65E3A5052986E75000DBB0C3 /* shCtIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = shCtIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E3A5072986E75000DBB0C3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		65E3A50A2986E75000DBB0C3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		65E3A50C2986E75000DBB0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E3A5112986E75100DBB0C3 /* shCtIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = shCtIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E3A5122986E75100DBB0C3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		65E3A5152986E75100DBB0C3 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		65E3A5182986E75100DBB0C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		65E3A51A2986E75100DBB0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E3A5282986E82300DBB0C3 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		65E3A52A2986E85100DBB0C3 /* DecWithPassShCtIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecWithPassShCtIntentHandler.swift; sourceTree = "<group>"; };
+		65E3A52B2986E85100DBB0C3 /* EncWithPassShCtIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncWithPassShCtIntentHandler.swift; sourceTree = "<group>"; };
+		65E3A52C2986E85100DBB0C3 /* EncWithDeetsShCtIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncWithDeetsShCtIntentHandler.swift; sourceTree = "<group>"; };
+		65E3A5302986E93200DBB0C3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		65E3A5312986E93200DBB0C3 /* LowLevelCryptTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowLevelCryptTools.swift; sourceTree = "<group>"; };
+		65E3A5372986EF6100DBB0C3 /* --light-enc-shct-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "--light-enc-shct-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +94,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65E3A5022986E75000DBB0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E3A5082986E75000DBB0C3 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E3A50E2986E75100DBB0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E3A5132986E75100DBB0C3 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				65E3A4F12986E6C500DBB0C3 /* 2-light-enc-shct */,
+				65E3A5092986E75000DBB0C3 /* shCtIntent */,
+				65E3A5142986E75100DBB0C3 /* shCtIntentUI */,
+				65E3A5062986E75000DBB0C3 /* Frameworks */,
 				65E3A4F02986E6C500DBB0C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,7 +127,9 @@
 		65E3A4F02986E6C500DBB0C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65E3A4EF2986E6C500DBB0C3 /* 2-light-enc-shct.app */,
+				65E3A4EF2986E6C500DBB0C3 /* your encrypter.app */,
+				65E3A5052986E75000DBB0C3 /* shCtIntent.appex */,
+				65E3A5112986E75100DBB0C3 /* shCtIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +137,12 @@
 		65E3A4F12986E6C500DBB0C3 /* 2-light-enc-shct */ = {
 			isa = PBXGroup;
 			children = (
+				65E3A5372986EF6100DBB0C3 /* --light-enc-shct-Info.plist */,
+				65E3A5002986E70400DBB0C3 /* 2-light-enc-shct.entitlements */,
 				65E3A4F22986E6C500DBB0C3 /* __light_enc_shctApp.swift */,
 				65E3A4F42986E6C500DBB0C3 /* ContentView.swift */,
+				65E3A5302986E93200DBB0C3 /* Extensions.swift */,
+				65E3A5312986E93200DBB0C3 /* LowLevelCryptTools.swift */,
 				65E3A4F62986E6C600DBB0C3 /* Assets.xcassets */,
 				65E3A4F82986E6C600DBB0C3 /* Preview Content */,
 			);
@@ -67,25 +157,94 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		65E3A5062986E75000DBB0C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65E3A5072986E75000DBB0C3 /* Intents.framework */,
+				65E3A5122986E75100DBB0C3 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65E3A5092986E75000DBB0C3 /* shCtIntent */ = {
+			isa = PBXGroup;
+			children = (
+				65E3A52A2986E85100DBB0C3 /* DecWithPassShCtIntentHandler.swift */,
+				65E3A52C2986E85100DBB0C3 /* EncWithDeetsShCtIntentHandler.swift */,
+				65E3A52B2986E85100DBB0C3 /* EncWithPassShCtIntentHandler.swift */,
+				65E3A50A2986E75000DBB0C3 /* IntentHandler.swift */,
+				65E3A5282986E82300DBB0C3 /* Intents.intentdefinition */,
+				65E3A50C2986E75000DBB0C3 /* Info.plist */,
+			);
+			path = shCtIntent;
+			sourceTree = "<group>";
+		};
+		65E3A5142986E75100DBB0C3 /* shCtIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				65E3A5152986E75100DBB0C3 /* IntentViewController.swift */,
+				65E3A5172986E75100DBB0C3 /* MainInterface.storyboard */,
+				65E3A51A2986E75100DBB0C3 /* Info.plist */,
+			);
+			path = shCtIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65E3A4EE2986E6C500DBB0C3 /* 2-light-enc-shct */ = {
+		65E3A4EE2986E6C500DBB0C3 /* your encrypter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65E3A4FD2986E6C600DBB0C3 /* Build configuration list for PBXNativeTarget "2-light-enc-shct" */;
+			buildConfigurationList = 65E3A4FD2986E6C600DBB0C3 /* Build configuration list for PBXNativeTarget "your encrypter" */;
 			buildPhases = (
 				65E3A4EB2986E6C500DBB0C3 /* Sources */,
 				65E3A4EC2986E6C500DBB0C3 /* Frameworks */,
 				65E3A4ED2986E6C500DBB0C3 /* Resources */,
+				65E3A5272986E75100DBB0C3 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65E3A51C2986E75100DBB0C3 /* PBXTargetDependency */,
+				65E3A51F2986E75100DBB0C3 /* PBXTargetDependency */,
+			);
+			name = "your encrypter";
+			productName = "2-light-enc-shct";
+			productReference = 65E3A4EF2986E6C500DBB0C3 /* your encrypter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65E3A5042986E75000DBB0C3 /* shCtIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E3A5242986E75100DBB0C3 /* Build configuration list for PBXNativeTarget "shCtIntent" */;
+			buildPhases = (
+				65E3A5012986E75000DBB0C3 /* Sources */,
+				65E3A5022986E75000DBB0C3 /* Frameworks */,
+				65E3A5032986E75000DBB0C3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "2-light-enc-shct";
-			productName = "2-light-enc-shct";
-			productReference = 65E3A4EF2986E6C500DBB0C3 /* 2-light-enc-shct.app */;
-			productType = "com.apple.product-type.application";
+			name = shCtIntent;
+			productName = shCtIntent;
+			productReference = 65E3A5052986E75000DBB0C3 /* shCtIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		65E3A5102986E75100DBB0C3 /* shCtIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E3A5212986E75100DBB0C3 /* Build configuration list for PBXNativeTarget "shCtIntentUI" */;
+			buildPhases = (
+				65E3A50D2986E75100DBB0C3 /* Sources */,
+				65E3A50E2986E75100DBB0C3 /* Frameworks */,
+				65E3A50F2986E75100DBB0C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shCtIntentUI;
+			productName = shCtIntentUI;
+			productReference = 65E3A5112986E75100DBB0C3 /* shCtIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +257,12 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					65E3A4EE2986E6C500DBB0C3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					65E3A5042986E75000DBB0C3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					65E3A5102986E75100DBB0C3 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -115,7 +280,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65E3A4EE2986E6C500DBB0C3 /* 2-light-enc-shct */,
+				65E3A4EE2986E6C500DBB0C3 /* your encrypter */,
+				65E3A5042986E75000DBB0C3 /* shCtIntent */,
+				65E3A5102986E75100DBB0C3 /* shCtIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +297,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65E3A5032986E75000DBB0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E3A50F2986E75100DBB0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E3A5192986E75100DBB0C3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +319,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E3A5342986E93200DBB0C3 /* LowLevelCryptTools.swift in Sources */,
 				65E3A4F52986E6C500DBB0C3 /* ContentView.swift in Sources */,
+				65E3A5322986E93200DBB0C3 /* Extensions.swift in Sources */,
+				65E3A5362986EA7300DBB0C3 /* Intents.intentdefinition in Sources */,
 				65E3A4F32986E6C500DBB0C3 /* __light_enc_shctApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65E3A5012986E75000DBB0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E3A5352986E93200DBB0C3 /* LowLevelCryptTools.swift in Sources */,
+				65E3A52E2986E85200DBB0C3 /* EncWithPassShCtIntentHandler.swift in Sources */,
+				65E3A5332986E93200DBB0C3 /* Extensions.swift in Sources */,
+				65E3A52D2986E85200DBB0C3 /* DecWithPassShCtIntentHandler.swift in Sources */,
+				65E3A5292986E82300DBB0C3 /* Intents.intentdefinition in Sources */,
+				65E3A50B2986E75000DBB0C3 /* IntentHandler.swift in Sources */,
+				65E3A52F2986E85200DBB0C3 /* EncWithDeetsShCtIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E3A50D2986E75100DBB0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E3A5162986E75100DBB0C3 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65E3A51C2986E75100DBB0C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65E3A5102986E75100DBB0C3 /* shCtIntentUI */;
+			targetProxy = 65E3A51B2986E75100DBB0C3 /* PBXContainerItemProxy */;
+		};
+		65E3A51F2986E75100DBB0C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65E3A5042986E75000DBB0C3 /* shCtIntent */;
+			targetProxy = 65E3A51E2986E75100DBB0C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65E3A5172986E75100DBB0C3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65E3A5182986E75100DBB0C3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		65E3A4FB2986E6C600DBB0C3 /* Debug */ = {
@@ -195,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,14 +493,17 @@
 		65E3A4FE2986E6C600DBB0C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "2-light-enc-shct/2-light-enc-shct.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"2-light-enc-shct/Preview Content\"";
 				DEVELOPMENT_TEAM = BR2XN9F953;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "--light-enc-shct-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,14 +525,17 @@
 		65E3A4FF2986E6C600DBB0C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "2-light-enc-shct/2-light-enc-shct.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"2-light-enc-shct/Preview Content\"";
 				DEVELOPMENT_TEAM = BR2XN9F953;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "--light-enc-shct-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +554,106 @@
 			};
 			name = Release;
 		};
+		65E3A5222986E75100DBB0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BR2XN9F953;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = shCtIntentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = shCtIntentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yissok.--light-enc-shct.shCtIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65E3A5232986E75100DBB0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BR2XN9F953;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = shCtIntentUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = shCtIntentUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yissok.--light-enc-shct.shCtIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65E3A5252986E75100DBB0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BR2XN9F953;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = shCtIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = shCtIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yissok.--light-enc-shct.shCtIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65E3A5262986E75100DBB0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BR2XN9F953;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = shCtIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = shCtIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yissok.--light-enc-shct.shCtIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,11 +666,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65E3A4FD2986E6C600DBB0C3 /* Build configuration list for PBXNativeTarget "2-light-enc-shct" */ = {
+		65E3A4FD2986E6C600DBB0C3 /* Build configuration list for PBXNativeTarget "your encrypter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65E3A4FE2986E6C600DBB0C3 /* Debug */,
 				65E3A4FF2986E6C600DBB0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E3A5212986E75100DBB0C3 /* Build configuration list for PBXNativeTarget "shCtIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E3A5222986E75100DBB0C3 /* Debug */,
+				65E3A5232986E75100DBB0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E3A5242986E75100DBB0C3 /* Build configuration list for PBXNativeTarget "shCtIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E3A5252986E75100DBB0C3 /* Debug */,
+				65E3A5262986E75100DBB0C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
