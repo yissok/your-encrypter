@@ -1,3 +1,6 @@
+// credit for this goes to the kind apple engineer Quinn “The Eskimo!”
+// https://developer.apple.com/forums/thread/687212
+
 import Foundation
 import CommonCrypto
 
